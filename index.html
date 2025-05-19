@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheDevGarden</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="text-black font-sans" style="background-image: url('./assets/img/bg-grid-full-page-1.png'); 
+
+background-size: cover; background-position: center;">	
+    <header class="py-4 relative z-20 ">
+        <div class="container mx-auto px-4 md:px-8 lg:px-56 flex justify-between items-center">
+            <a href="https://divdojo.com" class="flex items-center space-x-2">
+                <img src="https://divdojo.com/wp-content/uploads/2024/07/divdojo-logo-1-1.png" alt="DivDojo Logo"
+                    class="h-10" />
+            </a>
+    
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 font-semibold">
+                <a href="https://divdojo.com/" class="hover:underline underline-offset-4">Home</a>
+                <a href="https://divdojo.com/pricing/" class="hover:underline underline-offset-4">Pricing</a>
+                <a href="https://divdojo.com/contact-us/" class="hover:underline underline-offset-4">Contact Us</a>
+            </nav>
+    
+            <!-- Mobile Menu Button -->
+            <button data-collapse-toggle="mobile-menu" type="button"
+                class="md:hidden text-black hover:text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+    
+            <!-- Account Button - Hidden on mobile -->
+            <a href="https://divdojo.com/my-account/"
+                class="hidden md:block bg-pink-500 text-white px-4 py-2 rounded-md border border-black hover:bg-pink-600">
+                My Account
+            </a>
+        </div>
+    
+        <!-- Mobile Menu - Now positioned below the header bar -->
+        <div class="hidden md:hidden w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-4 space-y-2 sm:px-3 bg-transparent shadow-md">
+                <a href="https://divdojo.com/" class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Home</a>
+                <a href="https://divdojo.com/pricing/"
+                    class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Pricing</a>
+                <a href="https://divdojo.com/contact-us/"
+                    class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Contact Us</a>
+                <a href="https://divdojo.com/my-account/"
+                    class="block px-3 py-3 font-medium bg-pink-500 text-white rounded-md hover:bg-pink-600">
+                    My Account
+                </a>
+            </div>
+        </div>
+        </header>
+
+    <!-- Hero Section with background image -->
+    <section class="relative z-10 h-[85vh] -mt-20 text-center flex items-center justify-center" >
+        <div class="container mx-auto max-w-4xl px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Top-Tier WordPress Products & Services
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 leading-relaxed">
+                From custom plugin for business to entire custom website.<br />
+                We bring endless possibilities to WordPress.
+            </p>
+            <a href="/services/"
+                class="bg-pink-500 md:w-100 hover:bg-pink-600 text-white font-bold px-8 py-4 rounded-md border-2 border-black transition text-lg">
+                Contact Us
+            </a>
+
+            <!-- Star Rating -->
+            <div class="mt-16 flex flex-col items-center">
+                <div class="text-2xl text-black space-x-1 mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-lg font-bold">Rated 5/5 - from over 450 reviews</p>
+                        <!-- Arrow image (absolute positioned) -->
+                        <div class="absolute  transform -translate-x-1/2 hidden md:block" style="bottom: 30%; left: 63%;">
+                            <img src="https://divdojo.com/wp-content/uploads/2024/08/arrow-2.png" alt="Arrow"
+                                class="w-40 h-auto animate-zoom-in" style="animation-delay: 300ms;">
+                        </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of Hero Section -->
+    <section id="services" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl md:max-w-6xl">
+            <div class="relative">
+                <!-- Background decorative elements -->
+                <img src="https://divdojo.com/wp-content/uploads/2024/08/element-2.png" alt=""
+                    class="absolute left-[20%] sm:left-[28%] top-[-20px] sm:top-[-34px] w-[80px] h-[64px] sm:w-[100px] sm:h-[80px] hidden md:block animate-zoomIn">
+                <img src="https://divdojo.com/wp-content/uploads/2024/08/element-1.png" alt=""
+                    class="absolute right-[15%] sm:right-[23%] top-[-25px] sm:top-[-42px] w-[64px] h-[68px] sm:w-[80px] sm:h-[70px] hidden md:block animate-zoomIn">
+    
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-10 lg:mb-12">What We Offer</h2>
+    
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white rounded-[1.5rem] sm:rounded-[1.8rem]  border border-gray-100 overflow-hidden text-center ">
+                        <div class="bg-[#FCDB67] p-4 sm:p-6 lg:p-8">
+                            <div class="relative mx-auto w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40">
+                                <img src="https://divdojo.com/wp-content/uploads/2024/08/bg-fitur-1b.png" alt=""
+                                    class="absolute inset-0 w-full h-full object-cover">
+                                <img src="https://divdojo.com/wp-content/uploads/2024/08/110-hand-drawn-business-icons-MYYRXM-3.png"
+                                    alt="High Quality Plugins" class="relative z-10 w-full h-full object-contain">
+                            </div>
+                        </div>
+    
+                        <div class="p-4 sm:p-5 lg:p-6">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 lg:mb-4">High Quality Plugins
+                            </h3>
+                            <p class="text-gray-700 mb-3 sm:mb-4 lg:mb-6 leading-relaxed text-xs sm:text-sm lg:text-base">
+                                We produce robust and fine-tuned<br>
+                                WordPress plugins that helps<br>
+                                businesses grow.
+                            </p>
+                            <a href="https://divdojo.com/contact-us"
+                                class="inline-flex items-center justify-center text-blue-600 font-medium hover:text-blue-800 group text-xs sm:text-sm lg:text-base">
+                                <span>Contact Us</span>
+                                <svg class="ml-1 sm:ml-2 w-2 h-2 sm:w-3 sm:h-3 lg:w-4 lg:h-4 transition-transform group-hover:translate-x-1"
+                                    fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white rounded-[1.5rem] sm:rounded-[1.8rem]  overflow-hidden text-center border border-gray-100 transition-all ">
+                        <div class="bg-[#6788FC] p-4 sm:p-6 lg:p-8">
+                            <div class="relative mx-auto w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40">
+                                <img src="https://divdojo.com/wp-content/uploads/2024/08/bg-fitur-1b.png" alt=""
+                                    class="absolute inset-0 w-full h-full object-cover">
+                                <img src="https://divdojo.com/wp-content/uploads/2024/08/110-hand-drawn-business-icons-MYYRXM-5.png"
+                                    alt="Development Service" class="relative z-10 w-full h-full object-contain">
+                            </div>
+                        </div>
+    
+                        <div class="p-4 sm:p-5 lg:p-6">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 lg:mb-4">Development Service
+                            </h3>
+                            <p class="text-gray-700 mb-3 sm:mb-4 lg:mb-6 leading-relaxed text-xs sm:text-sm lg:text-base">
+                                We provide custom plugin/website<br>
+                                development services to fit<br>
+                                any requirement.
+                            </p>
+                            <a href="https://divdojo.com/contact-us"
+                                class="inline-flex items-center justify-center text-blue-600 font-medium hover:text-blue-800 group text-xs sm:text-sm lg:text-base">
+                                <span>Contact Us</span>
+                                <svg class="ml-1 sm:ml-2 w-2 h-2 sm:w-3 sm:h-3 lg:w-4 lg:h-4 transition-transform group-hover:translate-x-1"
+                                    fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white rounded-[1.5rem] sm:rounded-[1.8rem] border border-gray-100  overflow-hidden text-center  transition-all">
+                        <div class="bg-[#FC9167] p-4 sm:p-6 lg:p-8">
+                            <div class="relative mx-auto w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40">
+                                <img src="https://divdojo.com/wp-content/uploads/2024/08/bg-fitur-1b.png" alt=""
+                                    class="absolute inset-0 w-full h-full object-cover">
+                                <img src="https://divdojo.com/wp-content/uploads/2024/08/110-hand-drawn-business-icons-MYYRXM-2.png"
+                                    alt="Quick Support" class="relative z-10 w-full h-full object-contain">
+                            </div>
+                        </div>
+    
+                        <div class="p-4 sm:p-5 lg:p-6">
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 lg:mb-4">Quick Support</h3>
+                            <p class="text-gray-700 mb-3 sm:mb-4 lg:mb-6 leading-relaxed text-xs sm:text-sm lg:text-base">
+                                We are fast in response and we<br>
+                                don't stop until your issue is<br>
+                                solved.
+                            </p>
+                            <a href="https://divdojo.com/contact-us"
+                                class="inline-flex items-center justify-center text-blue-600 font-medium hover:text-blue-800 group text-xs sm:text-sm lg:text-base">
+                                <span>Contact Us</span>
+                                <svg class="ml-1 sm:ml-2 w-2 h-2 sm:w-3 sm:h-3 lg:w-4 lg:h-4 transition-transform group-hover:translate-x-1"
+                                    fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <div  class="relative py-16 px-4 sm:px-6 lg:px-8 bg-cover bg-center" style="background-image: url('./assets/img/cta-bg-001.png');">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <!-- Text Content -->
+            <div class="lg:w-1/2 space-y-10">
+                <div class="space-y-2">
+                    <h2 class="text-4xl sm:text-[2.8rem] font-light uppercase tracking-[0.2em] text-gray-700">
+                        SUFFERING FROM
+                    </h2>
+                    <h2 class="text-5xl sm:text-[3.5rem] font-bold uppercase tracking-tight text-gray-900 leading-[1.1]">
+                        SECURITY PROBLEMS?
+                    </h2>
+                </div>
+    
+                <p class="text-xl text-gray-600 leading-relaxed max-w-xl">
+                    Protect your data and privacy with robust security measures. Stay<br>
+                    ahead of threats and safeguard your digital assets effectively.
+                </p>
+    
+                <div class="space-y-4 pt-4">
+                    <h3 class="text-2xl sm:text-[1.8rem] font-semibold text-gray-800 mb-5">
+                        We Are Here To Solve Your Problem
+                    </h3>
+                    <a href="https://divdojo.com/my-account/"
+                        class=" bg-pink-500 text-white px-4 py-3 rounded-md border border-black hover:bg-pink-600">
+                        RESOLVE NOW</a>
+                </div>
+            </div>
+    
+            <!-- Image -->
+            <div class="lg:w-1/2">
+                <img src="https://thedevgarden.com/wp-content/uploads/2025/02/security-problem-skeleton.png"
+                    alt="Security illustration" class="w-full h-auto rounded-lg  border-4 border-white">
+            </div>
+        </div></div>
+
+        <div class="relative py-16">
+            <div class="max-w-7xl mx-auto relative bg-cover bg-center  py-12 px-4 "  style="background-image: url('./assets/img/cta-bg-001.png');">
+                <!-- Heading Section -->
+                <div class="text-center mb-12">
+                    <h2 class="font-['Poppins'] font-sans text-5xl font-light uppercase not-italic no-underline">
+                        WE SERVED <span class="font-bold">WORLDWIDE</span>                 </h2>
+                </div>
+        
+                <!-- Stats Section -->
+                <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-16 mb-16">
+                    <!-- Years of Experience -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-black mb-2">13+</div>
+                        <div class="text-lg text-black opacity-80 uppercase">Years Of Experience</div>
+                    </div>
+        
+                    <!-- Successful Projects -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-black mb-2">1,500+</div>
+                        <div class="text-lg text-black opacity-80 uppercase">Successful Project</div>
+                    </div>
+        
+                    <!-- Client Satisfaction -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-black mb-2">93%</div>
+                        <div class="text-lg text-black opacity-80 uppercase">Client Satisfaction</div>
+                    </div>
+                </div>
+        
+                <!-- Flags Carousel -->
+                <div class="relative overflow-hidden py-4">
+                    <div class="flex [animation:scroll_20s_linear_infinite] w-max gap-8">
+                        <!-- Singapore -->
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/singapore-flag.png" alt="Singapore"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+        
+                        <!-- Nigeria -->
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/nigeria-flag.png" alt="Nigeria"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+        
+                        <!-- Russia -->
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/russia-flag.png" alt="Russia"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+        
+                        <!-- Albania -->
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/albania-flag.png" alt="Albania"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+        
+                        <!-- Canada -->
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/canada-flag.png" alt="Canada"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+        
+                        <!-- Pakistan -->
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/pakistan-flag.png" alt="Pakistan"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+        
+                        <!-- Turkey -->
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/turkey-flag.png" alt="Turkey"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+        
+                        <!-- Duplicate for seamless looping -->
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/singapore-flag.png" alt="Singapore"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/nigeria-flag.png" alt="Nigeria"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+                        <div class="flex flex-col items-center shrink-0">
+                            <img src="https://thedevgarden.com/wp-content/uploads/2025/04/russia-flag.png" alt="Russia"
+                                class="w-32 h-20 object-contain mb-2">
+                        </div>
+                    </div>
+                </div>
+            </div>    </div>
+            <style>
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+            
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+            
+                .animate-\[scroll_20s_linear_infinite\] {
+                    animation: scroll 20s linear infinite;
+                }
+            
+                </style>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
