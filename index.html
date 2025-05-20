@@ -13,14 +13,14 @@
       background-size: cover; background-position: center;">
     <header class="py-4 relative z-20 ">
         <div class="container mx-auto px-4 md:px-8 lg:px-56 flex justify-between items-center">
-            <a href="https://divdojo.com" class="flex items-center space-x-2">
+            <a href="index.html" class="flex items-center space-x-2">
                 <img src="https://divdojo.com/wp-content/uploads/2024/07/divdojo-logo-1-1.png" alt="DivDojo Logo"
                     class="h-10" />
             </a>
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-6 font-semibold">
-                <a href="https://divdojo.com/" class="hover:underline underline-offset-4">Home</a>
-                <a href="https://divdojo.com/pricing/" class="hover:underline underline-offset-4">Pricing</a>
+                <a href="index.html" class="hover:underline underline-offset-4">Home</a>
+                <a href="pricing.html" class="hover:underline underline-offset-4">Pricing</a>
                 <a href="https://divdojo.com/contact-us/" class="hover:underline underline-offset-4">Contact Us</a>
             </nav>
             <!-- Mobile Menu Button -->
@@ -33,7 +33,7 @@
                 </svg>
             </button>
             <!-- Account Button - Hidden on mobile -->
-            <a href="https://divdojo.com/my-account/"
+            <a href="index.html"
                 class="hidden md:block bg-pink-500 text-white px-4 py-2 rounded-md border border-black hover:bg-pink-600">
                 My Account
             </a>
@@ -41,13 +41,13 @@
         <!-- Mobile Menu - Now positioned below the header bar -->
         <div class="hidden md:hidden w-full" id="mobile-menu">
             <div class="px-2 pt-2 pb-4 space-y-2 sm:px-3 bg-transparent shadow-md">
-                <a href="https://divdojo.com/"
+                <a href="index.html"
                     class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Home</a>
-                <a href="https://divdojo.com/pricing/"
+                <a href="pricing.html"
                     class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Pricing</a>
                 <a href="https://divdojo.com/contact-us/"
                     class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Contact Us</a>
-                <a href="https://divdojo.com/my-account/"
+                <a href="index.html"
                     class="block px-3 py-3 font-medium bg-pink-500 text-white rounded-md hover:bg-pink-600">
                     My Account
                 </a>
@@ -298,135 +298,123 @@
             </div>
         </div>
     </div>
-    <!-- Pricing Section -->
-    <section class="py-8 md:py-16 px-4 max-w-7xl mx-auto relative">
+    <!-- Main Pricing Section -->
+    <section class="py-12 md:py-20 px-4 max-w-7xl mx-auto relative">
         <!-- Decorative elements -->
         <img src="https://divdojo.com/wp-content/uploads/2024/08/element-1.png" alt=""
             class="hidden md:block absolute top-0 left-[24rem] w-[2rem] h-auto">
         <img src="https://divdojo.com/wp-content/uploads/2024/08/element-3.png" alt=""
             class="hidden md:block absolute top-6 right-[23rem] w-[1rem] h-auto">
-        <!-- Heading section -->
-        <div class="text-center mb-8 md:mb-12">
-            <h2 class="text-2xl md:text-4xl font-light font-['Poppins'] uppercase mb-4">Development Pricing</h2>
-            <p class="text-base md:text-lg max-w-3xl mx-auto">
-                We offer custom plugin, WordPress and WooCommerce development: When readymade plugins fall short, we
-                craft
-                tailored solutions to meet your unique requirements—ensuring your website works exactly the way you
-                want.
-            </p>
-        </div>
-        <!-- Pricing cards -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-8 md:py-12">
-            <!-- Pricing Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0">
+    
+        <!-- Development Pricing -->
+        <div class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-light font-['Poppins'] uppercase mb-4">Development Pricing</h2>
+                <p class="text-base md:text-lg max-w-3xl mx-auto">
+                    We offer custom plugin, WordPress and WooCommerce development: When readymade plugins fall short, we
+                    craft tailored solutions to meet your unique requirements.
+                </p>
+            </div>
+    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Full Time Card -->
-                <div
-                    class="border border-gray-200 rounded-[20px]  md:rounded-l-[20px] md:rounded-r-[0px] p-6 md:p-8 h-auto md:h-[510px] md:mt-[25px] relative shadow-lg transition-all shadow-sky-100">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Full time</h3>
-                    <p class="text-gray-600 mb-4 md:mb-6">Suitable for ongoing projects that require daily works.</p>
-                    <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">$3000 / month</div>
-                    <ul class="space-y-3 mb-6 md:mb-8">
+                <div class="border border-gray-200 rounded-[20px] p-8 h-full relative shadow-lg shadow-sky-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Full time</h3>
+                    <p class="text-gray-600 mb-6">Suitable for ongoing projects that require daily work.</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">$3000<span class="text-lg">/month</span></div>
+                    <ul class="space-y-3 mb-8">
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>40 hours per week</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Time tracking</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Flexible hours</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Constant communication</span>
                         </li>
                     </ul>
-                    <button
-                        class="w-full py-3 text-gray-700 px-6 bg-[#E8E8E8] hover:bg-gray-900 hover:text-white font-medium rounded-md transition-colors duration-200">
-                        Let's Discuss
+                    <button class="w-full py-3 bg-pink-500 text-white font-medium rounded-md hover:bg-pink-600">
+                        Get Started
                     </button>
                 </div>
-                <!-- Hourly Card -->
+    
+                <!-- Hourly Card (Featured) -->
                 <div
-                    class="bg-white border border-gray-200 rounded-[20px] p-6 md:p-8 md:py-20 relative shadow-lg transition-all shadow-sky-100">
-                    <!-- Most popular tag -->
+                    class="bg-white border-2 border-pink-500 rounded-[20px] p-8 relative shadow-lg transform scale-105 z-10">
                     <span
-                        class="absolute top-0 left-1/2 text-center w-[100%] md:w-[100%] transform -translate-x-1/2 -translate-y-1/2 bg-[#FCDB67] text-sm md:text-[1rem] font-semibold px-3 py-1 rounded-t-[20px]">
-                        Most popular
+                        class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#FCDB67] text-sm font-semibold px-4 py-1 rounded-full">
+                        Most Popular
                     </span>
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2 mt-4 md:mt-0">Hourly</h3>
-                    <p class="text-gray-600 mb-4 md:mb-6">Suitable for projects of any length or without any fixed
-                        schedule.
-                    </p>
-                    <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 border-b pb-4">$35/hour</div>
-                    <ul class="space-y-3 mb-6 md:mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 mt-4">Hourly</h3>
+                    <p class="text-gray-600 mb-6">Suitable for projects of any length or without fixed schedule.</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">$35<span class="text-lg">/hour</span></div>
+                    <ul class="space-y-3 mb-8">
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
-                            <span>Any number of hours.</span>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Any number of hours</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Time tracking</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Weekly/monthly limit</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Constant communication</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Flexible timing</span>
                         </li>
                     </ul>
-                    <a href="https://divdojo.com/my-account/"
-                        class="block bg-pink-500 text-center text-white px-4 py-2 rounded-md border border-black hover:bg-pink-600">
-                        Let's Discuss
-                    </a>
+                    <button class="w-full py-3 bg-pink-500 text-white font-medium rounded-md hover:bg-pink-600">
+                        Get Started
+                    </button>
                 </div>
+    
                 <!-- Custom Card -->
-                <div
-                    class="border border-gray-200  rounded-[20px]  md:rounded-r-[20px]  md:rounded-l-[0px] p-6 md:p-8 h-auto md:h-[510px] md:mt-[25px] relative shadow-lg transition-all shadow-sky-100">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Custom</h3>
-                    <p class="text-gray-600 mb-4 md:mb-6">You are free to discuss any custom requirements as per your
-                        need.
-                    </p>
-                    <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Custom</div>
-                    <ul class="space-y-3 mb-6 md:mb-8">
+                <div class="border border-gray-200 rounded-[20px] p-8 h-full relative shadow-lg shadow-sky-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Custom</h3>
+                    <p class="text-gray-600 mb-6">You are free to discuss any custom requirements.</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">Custom</div>
+                    <ul class="space-y-3 mb-8">
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Any number of team members</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Select deadline</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Select schedule</span>
                         </li>
                         <li class="flex items-center">
-                            <input type="checkbox" class="w-5 h-5 mr-3" disabled checked>
+                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span>Time tracking</span>
                         </li>
                     </ul>
-                    <button
-                        class="w-full py-3 text-gray-700 px-6 bg-[#E8E8E8] hover:bg-gray-900 hover:text-white font-medium rounded-md transition-colors duration-200">
-                        Let's Discuss
+                    <button class="w-full py-3 bg-gray-800 text-white font-medium rounded-md hover:bg-gray-900">
+                        Contact Us
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-  
-    <section class="relative py-8 md:py-16 px-4 sm:px-6 lg:px-8 bg-cover bg-center"
-        
-       >
+  <!-- // Contact Form Section -->
+    <section class="relative py-8 md:py-16 px-4 sm:px-6 lg:px-8 bg-cover bg-center">
         <div class="p-4 sm:p-6 md:p-8 rounded-lg max-w-3xl mx-auto">
             <div class="text-center mb-6 md:mb-8">
                 <h2
@@ -519,7 +507,9 @@
             </form>
         </div>
         </section>
+        <!-- End of Contact Form Section -->
 
+    <!-- Footer Section -->
         <footer class="relative py-4 md:pt-16  md:pb-8  px-4 sm:px-12 lg:px-48 bg-cover bg-bottom bg-no-repeat border-t border-gray-200"
             style="background-image: url('./assets/img/Home_Hero_BG-modi.svg');">
             <div class="flex flex-col">

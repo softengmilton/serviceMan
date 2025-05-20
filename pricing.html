@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - DivDojo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-scroll {
+            animation: scroll 20s linear infinite;
+        }
+    </style>
+</head>
+
+<body class="text-black font-sans" style="background-image: url('./assets/img/bg-grid-full-page-1.png'); 
+      background-size: cover; background-position: center;">
+<header class="py-4 relative z-20 ">
+    <div class="container mx-auto px-4 md:px-8 lg:px-56 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+            <img src="https://divdojo.com/wp-content/uploads/2024/07/divdojo-logo-1-1.png" alt="DivDojo Logo"
+                class="h-10" />
+        </a>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6 font-semibold">
+            <a href="index.html" class="hover:underline underline-offset-4">Home</a>
+            <a href="pricing.html" class="hover:underline underline-offset-4">Pricing</a>
+            <a href="https://divdojo.com/contact-us/" class="hover:underline underline-offset-4">Contact Us</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button data-collapse-toggle="mobile-menu" type="button"
+            class="md:hidden text-black hover:text-gray-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+        <!-- Account Button - Hidden on mobile -->
+        <a href="index.html"
+            class="hidden md:block bg-pink-500 text-white px-4 py-2 rounded-md border border-black hover:bg-pink-600">
+            My Account
+        </a>
+    </div>
+    <!-- Mobile Menu - Now positioned below the header bar -->
+    <div class="hidden md:hidden w-full" id="mobile-menu">
+        <div class="px-2 pt-2 pb-4 space-y-2 sm:px-3 bg-transparent shadow-md">
+            <a href="index.html" class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Home</a>
+            <a href="pricing.html"
+                class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Pricing</a>
+            <a href="https://divdojo.com/contact-us/"
+                class="block px-3 py-3 font-medium hover:bg-yellow-400 rounded-md">Contact Us</a>
+            <a href="index.html"
+                class="block px-3 py-3 font-medium bg-pink-500 text-white rounded-md hover:bg-pink-600">
+                My Account
+            </a>
+        </div>
+    </div>
+</header>
+
+    <!-- Pricing Hero Section -->
+    <section class="relative py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-cover bg-center"
+        style="background-image: url('./assets/img/cta-bg-001.png');">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 text-gray-900">Simple, Transparent Pricing</h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Choose the plan that works best for your WordPress development needs. No hidden fees, just quality
+                service.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button class="px-6 py-2 bg-pink-500 text-white rounded-full">Monthly</button>
+                <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">Yearly (Save
+                    20%)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Pricing Section -->
+    <section class="py-12 md:py-20 px-4 max-w-7xl mx-auto relative">
+        <!-- Decorative elements -->
+        <img src="https://divdojo.com/wp-content/uploads/2024/08/element-1.png" alt=""
+            class="hidden md:block absolute top-0 left-[24rem] w-[2rem] h-auto">
+        <img src="https://divdojo.com/wp-content/uploads/2024/08/element-3.png" alt=""
+            class="hidden md:block absolute top-6 right-[23rem] w-[1rem] h-auto">
+
+        <!-- Development Pricing -->
+        <div class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-light font-['Poppins'] uppercase mb-4">Development Pricing</h2>
+                <p class="text-base md:text-lg max-w-3xl mx-auto">
+                    We offer custom plugin, WordPress and WooCommerce development: When readymade plugins fall short, we
+                    craft tailored solutions to meet your unique requirements.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Full Time Card -->
+                <div class="border border-gray-200 rounded-[20px] p-8 h-full relative shadow-lg shadow-sky-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Full time</h3>
+                    <p class="text-gray-600 mb-6">Suitable for ongoing projects that require daily work.</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">$3000<span class="text-lg">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>40 hours per week</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Time tracking</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Flexible hours</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Constant communication</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-pink-500 text-white font-medium rounded-md hover:bg-pink-600">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Hourly Card (Featured) -->
+                <div
+                    class="bg-white border-2 border-pink-500 rounded-[20px] p-8 relative shadow-lg transform scale-105 z-10">
+                    <span
+                        class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#FCDB67] text-sm font-semibold px-4 py-1 rounded-full">
+                        Most Popular
+                    </span>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 mt-4">Hourly</h3>
+                    <p class="text-gray-600 mb-6">Suitable for projects of any length or without fixed schedule.</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">$35<span class="text-lg">/hour</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Any number of hours</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Time tracking</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Weekly/monthly limit</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Constant communication</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Flexible timing</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-pink-500 text-white font-medium rounded-md hover:bg-pink-600">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Custom Card -->
+                <div class="border border-gray-200 rounded-[20px] p-8 h-full relative shadow-lg shadow-sky-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Custom</h3>
+                    <p class="text-gray-600 mb-6">You are free to discuss any custom requirements.</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">Custom</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Any number of team members</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Select deadline</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Select schedule</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Time tracking</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-gray-800 text-white font-medium rounded-md hover:bg-gray-900">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+            <p class="text-gray-600">Find answers to common questions about our pricing and services.</p>
+        </div>
+    
+        <div class="space-y-4" id="accordion-collapse" data-accordion="collapse">
+            <!-- FAQ Item 1 -->
+            <div class="border-b border-gray-200 pb-4">
+                <button type="button"
+                    class="flex justify-between items-center w-full text-left focus:ring-0 focus:!ring-transparent hover:!bg-transparent active:!bg-transparent !bg-transparent"
+                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1">
+                    <h3 class="text-lg font-semibold text-gray-800">What payment methods do you accept?</h3>
+                    <i class="fas fa-chevron-down text-gray-500 transition-transform duration-200" data-accordion-icon></i>
+                </button>
+                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                    <div class="mt-2 text-gray-600">
+                        We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers
+                        for larger projects.
+                    </div>
+                </div>
+            </div>
+    
+            <!-- FAQ Item 2 -->
+            <div class="border-b border-gray-200 pb-4">
+                <button type="button"
+                    class="flex justify-between items-center w-full text-left focus:ring-0 focus:!ring-transparent hover:!bg-transparent active:!bg-transparent !bg-transparent"
+                    data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                    aria-controls="accordion-collapse-body-2">
+                    <h3 class="text-lg font-semibold  text-gray-800">Is there a money-back guarantee?</h3>
+                    <i class="fas fa-chevron-down text-gray-500 transition-transform duration-200" data-accordion-icon></i>
+                </button>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="mt-2 text-gray-600">
+                        Yes, we offer a 30-day money-back guarantee on all our plugin purchases if you're not completely
+                        satisfied.
+                    </div>
+                </div>
+            </div>
+    
+            <!-- FAQ Item 3 -->
+            <div class="border-b border-gray-200 pb-4">
+                <button type="button"
+                    class="flex justify-between items-center w-full text-left focus:ring-0 focus:!ring-transparent hover:!bg-transparent active:!bg-transparent !bg-transparent"
+                    data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                    aria-controls="accordion-collapse-body-3">
+                    <h3 class="text-lg font-semibold  text-gray-800">Can I upgrade my plan later?</h3>
+                    <i class="fas fa-chevron-down text-gray-500 transition-transform duration-200" data-accordion-icon></i>
+                </button>
+                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                    <div class="mt-2 text-gray-600">
+                        Absolutely! You can upgrade your plan at any time, and we'll prorate the difference in cost.
+                    </div>
+                </div>
+            </div>
+    
+            <!-- FAQ Item 4 -->
+            <div class="border-b border-gray-200 pb-4">
+                <button type="button"
+                    class="flex justify-between items-center w-full text-left focus:ring-0 focus:!ring-transparent hover:!bg-transparent active:!bg-transparent !bg-transparent"
+                    data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                    aria-controls="accordion-collapse-body-4">
+                    <h3 class="text-lg font-semibold  text-gray-800">Do you offer discounts for nonprofits?</h3>
+                    <i class="fas fa-chevron-down text-gray-500 transition-transform duration-200" data-accordion-icon></i>
+                </button>
+                <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                    <div class="mt-2 text-gray-600">
+                        Yes, we offer a 15% discount for registered nonprofit organizations. Contact our sales team with
+                        proof of your nonprofit status.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4  text-gray-900 text-center"
+    
+      >
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Still have questions?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Our team is ready to help you choose the perfect plan for your WordPress needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="/contact-us/" class="px-8 py-3 bg-pink-500 text-white font-bold rounded-md hover:bg-pink-600">
+                    Contact Sales
+                </a>
+                <a href="/support/" class="px-8 py-3 bg-white text-gray-800 font-bold rounded-md hover:bg-gray-100">
+                    Live Chat
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        class="relative py-4 md:pt-16  md:pb-8  px-4 sm:px-12 lg:px-48 bg-cover bg-bottom bg-no-repeat border-t border-gray-200"
+        style="background-image: url('./assets/img/Home_Hero_BG-modi.svg');">
+        <div class="flex flex-col">
+            <!-- GET UPDATES SECTION -->
+            <div class="hidden md:flex justify-between items-stretch">
+                <div class="w-full">
+                    <h4 class="text-primary text-3xl font-normal uppercase"><b>GET UPDATES</b> BEFORE YOU SLEEP</h4>
+                </div>
+    
+                <div class="w-full flex justify-center">
+                    <div class="flex w-full max-w-[37rem]">
+                        <!-- Email Input Field -->
+                        <div class="flex-grow">
+                            <label for="form-field-email" class="sr-only">Email</label>
+                            <input type="email" name="form_fields[email]" id="form-field-email"
+                                class="w-full px-6 py-2 bg-transparent border border-gray-300 rounded-l-full focus:outline-none  "
+                                placeholder="Enter Your Email" required>
+                        </div>
+    
+                        <!-- Submit Button -->
+                        <div class="flex-shrink-0 relative">
+                            <button type="submit"
+                                class="h-full absolute left-[-78px] px-6 py-2 bg-white text-blue-600 font-semibold uppercase 
+                                                                    border rounded-full hover:bg-gray-700 hover:text-white 
+                                                                     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                DRIVEIN
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- MAIN CONTENT SECTION -->
+            <div class="py-6 px-4 sm:px-8 lg:px-12">
+                <div class="max-w-7xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <!-- Left Column - Logo and Social (keep as-is) -->
+                        <div class="md:w-2/5">
+                            <div class="backdrop-blur-sm w-full flex flex-col">
+                                <!-- Logo -->
+                                <div class="text-left">
+                                    <a href="https://thedevgarden.com" class="inline-block">
+                                        <img width="768" height="92"
+                                            src="https://divdojo.com/wp-content/uploads/2024/07/divdojo-logo-1-1.png"
+                                            class="max-w-[45%] h-[5.5rem]" alt="TheDevGarden Logo">
+                                    </a>
+                                </div>
+    
+                                <!-- Tagline -->
+                                <p
+                                    class="text-left font-poppins text-sm font-medium normal-case leading-[1.5em] text-primary mt-4">
+                                    We love crafting unforgettable digital experiences, brands and websites with people like
+                                    you.
+                                </p>
+    
+                                <!-- Follow Us Section -->
+                                <div class="w-full flex flex-col mt-6">
+                                    <div
+                                        class="bg-[#F2F9FED1] rounded-full px-5 py-[0.25rem] flex justify-between items-center">
+                                        <h2 class="text-lg">Follow Us</h2>
+    
+                                        <!-- Social Icons -->
+                                        <div class="flex items-center gap-2">
+                                            <a href="https://www.facebook.com/TheDevGardenOfficial" target="_blank"
+                                                class="bg-white rounded-full p-[0.4em] flex items-center justify-center">
+                                                <i class="fab fa-facebook-f text-sm text-blue-600"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/thedevgardenofficial" target="_blank"
+                                                class="bg-white rounded-full p-[0.4em] flex items-center justify-center">
+                                                <i class="fab fa-linkedin-in text-sm text-blue-600"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/thedevgardenofficial/" target="_blank"
+                                                class="bg-white rounded-full p-[0.4em] flex items-center justify-center">
+                                                <i class="fab fa-instagram text-sm text-blue-600"></i>
+                                            </a>
+                                            <a href="https://maps.app.goo.gl/zg3GLpmxLxLLUqTTA?g_st=ac" target="_blank"
+                                                class="bg-white rounded-full p-[0.4em] flex items-center justify-center">
+                                                <i class="fab fa-google text-sm text-blue-600"></i>
+                                            </a>
+                                            <a href="https://thedevgarden.blogspot.com/" target="_blank"
+                                                class="bg-white rounded-full p-[0.4em] flex items-center justify-center">
+                                                <i class="fab fa-blogger-b text-sm text-blue-600"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Middle Column - Useful Links -->
+                        <div class="md:w-1/5 lg:w-1/4">
+                            <h2 class="text-xl font-semibold mb-4 uppercase">Address</h2>
+                            <div class="h-px bg-gray-300 w-16 mb-4"></div>
+                            <div class="mt-4">
+                                <!-- <h3 class="text-lg font-semibold text-primary">TheDevGarden</h3> -->
+                                <address class="font-poppins text-sm font-medium not-italic text-gray-600 mt-2">
+                                    123 Business Avenue<br>
+                                    Suite 456<br>
+                                    San Francisco, CA 94107<br>
+                                    United States
+                                </address>
+                                <p class="font-poppins text-sm font-medium text-gray-600 mt-2">
+                                    Phone: +1 (555) 123-4567<br>
+                                    Email: info@thedevgarden.com
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- Right Column - Contact -->
+                        <div class="md:w-2/5 lg:w-1/3">
+                            <h2 class="text-xl font-semibold mb-4 uppercase">LET'S GET STARTED</h2>
+                            <div class="h-px bg-gray-300 w-16 mb-4"></div>
+                            <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                                We'd Love To Hear About Your Project.
+                            </p>
+                            <a href="#"
+                                class="inline-block px-6 py-2 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-900 hover:text-white font-medium  transition-colors duration-200">
+                                CONTACT US NOW!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright Section -->
+            <div class="mt-1 pt-8 border-t border-gray-200">
+                <div class="max-w-7xl mx-auto text-center text-gray-600 text-sm">
+                    <p>© 2024 TheDevGarden. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
